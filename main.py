@@ -10,6 +10,7 @@ if __name__ == '__main__':
     url = "https://api.fda.gov/food/enforcement.json"
     search_query = {"count": "voluntary_mandated.exact"}
 
+    # response from api (request object)
     response = get_response(url, search_query)
 
     # validation params was formatted properly
