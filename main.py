@@ -27,7 +27,10 @@ if __name__ == '__main__':
 
     # get json
     resp_text = json.loads(response.text)
+    # print(response.text)
 
     # print Firm Initiated count
-    print("{} : {}".format(resp_text["results"][1]["term"], resp_text["results"][1]["count"]))
+    print("Recalls Reported to FDA")
+    for item in resp_text["results"]:
+        print(f"{item['term']} : {item['count']}")
 
