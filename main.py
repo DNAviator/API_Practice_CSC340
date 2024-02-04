@@ -4,16 +4,6 @@ import json
 def get_response(url, params):
     return requests.get(url, params=params)
 
-def post(url, api_key, data):
-    return requests.post(f"{url}{api_key}", data)
-
-def delete(url, api_key, data):
-    return requests.delete(f"{url}{api_key}", data)
-
-def put(url, api_key, data):
-    return requests.post(f"{url}{api_key}", data)
-
-
 if __name__ == '__main__':
 
     # data for requests
